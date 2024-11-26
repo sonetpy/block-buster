@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+metadata:
+  name: demo-web-app-kustomization
+  namespace: flux-system
+spec:
+  interval: 10m
+  sourceRef:
+    kind: GitRepository
+    name: block-buster
+  path: "./flux-clusters/dev-cluster/demo-web-app"
+  prune: true
+  targetNamespace: demo
+    ## Create a new kustomization file to tell Flux to manage these resources:
