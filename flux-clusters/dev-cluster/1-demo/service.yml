@@ -7,11 +7,11 @@ metadata:
   namespace: 1-demo
 spec:
   ports:
-    - port: 80
-      protocol: TCP
-      targetPort: 80
+  - port: 80
+    protocol: TCP
+    targetPort: 80
   selector:
     app: block-buster
     version: 7.1.0
     env: dev
-type: LoadBalancer
+  type: LoadBalancer
