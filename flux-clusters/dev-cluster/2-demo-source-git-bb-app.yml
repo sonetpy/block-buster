@@ -9,3 +9,5 @@ spec:
   ref:
     branch: 2-demo
   url: https://github.com/sonetpy/bb-app-source
+  secretRef:
+    name: gitops-learning 
